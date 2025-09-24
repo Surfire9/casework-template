@@ -1,0 +1,38 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python / notebooks (if you ever add scripts)
+__pycache__/
+.ipynb_checkpoints/
+
+# Node / tooling (just in case)
+node_modules/
+
+# Logs / caches / archives
+*.log
+*.tmp
+*.swp
+*.zip
+*.tar
+*.tar.gz
+
+# Large or sensitive lab artifacts
+captures/
+snapshots/
+*.pcap
+*.pcapng
+*.key
+*.pem
+secrets.txt
+.env
+
+# Build / site output (if you publish docs later)
+dist/
+build/
+site/
+
+# Don’t track empty folders unless you add .gitkeep
+EOF

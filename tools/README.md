@@ -8,9 +8,6 @@ They are designed to make your workflow safer, cleaner, and more consistent.
 ## 📌 Current Tools
 
 - sanitize.sh 
-  Scans staged files before committing to ensure sensitive values (IPs, domains, usernames) are replaced with <placeholders>. 
-  Run it manually before each commit:
-  tools/sanitize.sh
 
 ---
 

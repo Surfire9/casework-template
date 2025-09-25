@@ -1,15 +1,44 @@
 # 🧪 Labs
 
 This folder contains **lab notes** from training platforms, courses, or exercises.  
-Use it to document commands, key steps, and takeaways from hands-on practice.
+Each lab gets its own subfolder, which includes notes and (optional) screenshots.
+
+---
 
 ## 📌 How to Use
-- Create a new file from the template: `lab-notes-template.md`
-- Name it using the convention: `lab-<topic>-YYYY-MM-DD.md`
-  - Example: `lab-nmap-basics-2025-09-24.md`
-- Keep notes concise: objective, commands, and key takeaways.
 
-## ✅ Example Contents
-- Nmap scanning basics
-- Wireshark traffic analysis
-- Linux privilege escalation practice
+1. Create a new subfolder for each lab using this format:  
+   lab-<topic>-YYYY-MM-DD/
+
+   Example:  
+   lab-active-recon-2025-09-25/
+
+2. Inside the lab folder, include at least:
+   - notes.md → your lab notes, created from templates/lab-notes-template.md
+   - screenshots/ (optional) → redacted screenshots if they add value
+
+   Example structure:
+   01-Labs/
+   └── lab-active-recon-2025-09-25/
+       ├── notes.md
+       └── screenshots/
+           ├── nmap-scan.png
+           └── ad-enum.png
+
+3. Keep notes concise:
+   - Objective (what the lab is about)  
+   - Key commands / steps (reusable later)  
+   - Takeaways (what you learned or want to revisit)  
+
+4. Sanitize all files before committing:
+   - Replace real IPs/hostnames with <placeholders>  
+   - Run tools/sanitize.sh  
+
+---
+
+## ✅ Example Lab Ideas
+
+- Nmap scanning basics  
+- Wireshark traffic analysis  
+- Linux privilege escalation practice  
+- Password cracking with Hashcat

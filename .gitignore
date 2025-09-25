@@ -36,3 +36,4 @@ site/
 
 # Don’t track empty folders unless you add .gitkeep
 EOF
+*.bak

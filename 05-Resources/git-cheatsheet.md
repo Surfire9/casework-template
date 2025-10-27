@@ -1,47 +1,49 @@
-feat: → a new feature (e.g., new detection playbook, new script)
-fix: → a bug fix (e.g., corrected a broken query, fixed markdown formatting)
-docs: → documentation only (e.g., updating README, adding notes)
-style: → code style changes (formatting, spacing, no logic changes)
-refactor: → restructuring code or content without changing behavior
-test: → adding/updating tests (unit tests, queries, validations)
-chore: → repo maintenance, dependencies, or small non-user-facing chang
-perf: → performance improvements
-ci: → continuous integration / automation updates
-build: → build scripts, dependencies, package managers
+🧠 Git Cheat Sheet
 
-#First-time setup (per repo)
+🏷️ Commit Message Conventions (Conventional Commits)
+Prefix	Purpose	Example
+feat:	Add a new feature	feat: add new detection playbook
+fix:	Fix a bug	fix: correct broken query
+docs:	Documentation changes only	docs: update README
+style:	Formatting or whitespace (no logic change)	style: reformat code
+refactor:	Code restructuring without behavior change	refactor: simplify parser logic
+test:	Add or update tests	test: add validation unit tests
+chore:	Maintenance or non-user-facing changes	chore: update dependencies
+perf:	Performance improvements	perf: optimize query response
+ci:	Continuous Integration or automation changes	ci: update GitHub Actions workflow
+build:	Build scripts or package manager changes	build: update package.json
 
-git init                        # initialize a repo (if not already)
-git branch -M main              # ensure branch is named main
+🚀 First-Time Setup (Per Repo)
+git init                     # Initialize repository
+git branch -M main            # Ensure branch is named 'main'
 git remote add origin git@github.com:USERNAME/REPO.git
-git add .
+git add .                     # Stage all files
 git commit -m "chore: initial commit"
-git push -u origin main         # first push (-u sets upstream)
+git push -u origin main       # First push (-u sets upstream)
 
-#Daily workflow
-
-git pull                        # get latest changes (good habit before working)
-
-git status                      # check what changed
-git add .                       # stage all changes
+🔁 Daily Workflow
+git pull                      # Sync latest changes
+git status                    # View modified files
+git add .                     # Stage all changes
 git commit -m "feat: add new detection playbook"
-git push                        # push to GitHub (after first push, no -u needed)
+git push                      # Push to remote
 
-#Branching (experiments or features)
+💡 Tip: Always pull before starting new work.
 
-git checkout -b feature-name    # create & switch to new branch
-# make changes...
+🌱 Branching (Features or Experiments)
+git checkout -b feature-name   # Create & switch to new branch
+
+# Make changes...
 git add .
 git commit -m "work: add draft writeup"
-git push -u origin feature-name # first push for branch
+git push -u origin feature-name  # First push for new branch
 
-#Switch back to main (post branch)
 
+Switch back to main after finishing:
 git checkout main
-git pull                        # sync with remote
+git pull                       # Update main branch
 
-#Remove files/folders
-
+🧹 Removing Files or Folders
 git rm file.txt
 git commit -m "chore: remove file"
 git push
@@ -49,9 +51,6 @@ git push
 git rm -r foldername
 git commit -m "chore: remove folder"
 git push
-
-#Log & history
-git log --oneline --graph --decorate --all   # pretty history
-git diff                                     # see changes before commit
-
-
+📜 Logs & History
+git log --oneline --graph --decorate --all   # Pretty visual history
+git diff                                    # Show unstaged changes
